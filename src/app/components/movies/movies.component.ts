@@ -10,7 +10,7 @@ export class MoviesComponent  {
 
 		popularList: Array<Object>;
 		theatersList: Array<Object>;
-
+		searchString: string; 
 
 		constructor(private _movieService: MovieService)
 		{
@@ -27,7 +27,11 @@ export class MoviesComponent  {
 
 					}); 
 			
+		}
 
+		searchMovies()
+		{
+			console.log(this.searchString); 
 		}
 
 

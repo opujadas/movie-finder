@@ -23,6 +23,9 @@ var MoviesComponent = (function () {
             console.log(res.results);
         });
     }
+    MoviesComponent.prototype.searchMovies = function () {
+        console.log(this.searchString);
+    };
     return MoviesComponent;
 }());
 MoviesComponent = __decorate([

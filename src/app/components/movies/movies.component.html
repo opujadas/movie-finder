@@ -1,3 +1,16 @@
+    <div class="jumbotron">
+    		<div class="container">
+    				<h1>Chercher un film</h1>
+    				<p>Rechercehr un film en utilisant le formulaire ci-dessous</p>
+    				<form (submit)="searchMovies()">
+    						<input type="text" class="form-control" [(ngModel)]="searchString" name="searchString">
+    						<br>
+    						<button class="btn btn-primary btn-lg">Chercher</button>
+    				</form>
+    		</div>
+
+    </div>
+
 <div class="panel panel-default">
 	<div class="panel-heading">
 		<h3 class="panel-title">Films populaires</h3>
