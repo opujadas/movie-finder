@@ -31,6 +31,10 @@ var MovieService = (function () {
         return this._jsonp.get('https://api.themoviedb.org/3/search/movie?callback=JSONP_CALLBACK&query=' + searchString + '&sort_by=popularity.desc&api_key=' + this.apikey)
             .map(function (res) { return res.json(); });
     };
+    MovieService.prototype.getMovie = function (id) {
+        return this._jsonp.get('https://api.themoviedb.org/3/movie/' + id + '?callback=JSONP_CALLBACK&api_key=' + this.apikey)
+            .map(function (res) { return res.json(); });
+    };
     return MovieService;
 }());
 MovieService = __decorate([

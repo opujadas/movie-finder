@@ -1,7 +1,8 @@
     <div class="jumbotron">
     		<div class="container">
     				<h1>Chercher un film</h1>
-    				<p>Rechercehr un film en utilisant le formulaire ci-dessous</p>
+    				<p>Recherchez un film en complétant le champ ci-dessous : (La recherche va se baser sur l'API <a href="https://www.themoviedb.org">themoviedb.org</a>)</p>
+    				
     				<form (submit)="searchMovies()">
     						<input type="text" class="form-control" [(ngModel)]="searchString" name="searchString">
     						<br>
@@ -21,7 +22,7 @@
 						<img *ngIf="movie.poster_path" class="thumbnail" src="http://image.tmdb.org/t/p/w500/{{movie.poster_path}}">
 						<h4>{{movie.title}}</h4>
 						<p>{{movie.release_date}}</p>
-						<p><a class="btn btn-default" href="#">Voir les détails</a></p>
+						<p><a class="btn btn-default"  routerLink="/movie/{{movie.id}}">Voir les détails</a></p>
 					</div>					
 				</div>
 			</div>
@@ -42,7 +43,7 @@
 						<img *ngIf="movie.poster_path" class="thumbnail" src="http://image.tmdb.org/t/p/w500/{{movie.poster_path}}">
 						<h4>{{movie.title}}</h4>
 						<p>{{movie.release_date}}</p>
-						<p><a class="btn btn-default" href="#">Voir les détails</a></p>
+						<p><a class="btn btn-default" routerLink="/movie/{{movie.id}}">Voir les détails</a></p>
 					</div>
 				</div>
 			</div>
@@ -63,7 +64,7 @@
 					<img *ngIf="movie.poster_path" class="thumbnail" src="http://image.tmdb.org/t/p/w500/{{movie.poster_path}}">
 					<h4>{{movie.title}}</h4>
 					<p>{{movie.release_date}}</p>
-					<p><a class="btn btn-default" href="#">Voir les détails</a></p>
+					<p><a class="btn btn-default"  routerLink="/movie/{{movie.id}}">Voir les détails</a></p>
 				</div>
 			</div>
 		</div>
