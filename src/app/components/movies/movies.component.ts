@@ -11,6 +11,7 @@ export class MoviesComponent  {
 		popularList: Array<Object>;
 		theatersList: Array<Object>;
 		searchString: string; 
+		searchRes: Array<Object>; 
 
 		constructor(private _movieService: MovieService)
 		{
@@ -32,6 +33,12 @@ export class MoviesComponent  {
 		searchMovies()
 		{
 			console.log(this.searchString); 
+
+			this._movieService.searchMovies(this.searchString).subscribe(res => {
+					this.searchRes = res.results; 
+					console.log(res.results); 
+
+					}); 			
 		}
 
 

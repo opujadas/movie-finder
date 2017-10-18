@@ -24,7 +24,12 @@ var MoviesComponent = (function () {
         });
     }
     MoviesComponent.prototype.searchMovies = function () {
+        var _this = this;
         console.log(this.searchString);
+        this._movieService.searchMovies(this.searchString).subscribe(function (res) {
+            _this.searchRes = res.results;
+            console.log(res.results);
+        });
     };
     return MoviesComponent;
 }());
