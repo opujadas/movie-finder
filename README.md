@@ -13,3 +13,7 @@ Lancer `npm start` pour démarrer le serveur de dev. Aller ensuite sur  `http://
 
 Pour compiler l'application et la préparer pour une mise en ligne, lancer un terminal (ou console), aller dans le répertoire de base (ex : cd movie-finder) et lancer `ng build` pour compiler l'application. Le source compilé sera construit et disponible dans le répertoire  `dist/` directory. Utiliser `-prod` pour un environnement de production.
 
+Attention, pour la mise en prod, après compilation dans le fichier dist/index.html, il faut adapter la balise <base href="/movie-finder/"> à l'environnement en ligne 
+Ex : <base href="/movie-finder/"> si le site se trouve par ex : www.abc.xyz/movie-finder/ ou <base href="/"> si le contenu de l'appli doit se trouver à la racine du serveur
+
+
