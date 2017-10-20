@@ -3,9 +3,8 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { MovieService } from '../../services/movie.service';
 
 @Component({
-  moduleId: module.id,
   selector: 'movie',
-  templateUrl: `movie.component.html`,
+  templateUrl: 'movie.component.html',
 })
 
 export class MovieComponent implements OnInit {  

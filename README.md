@@ -1,11 +1,15 @@
 # movie-finder
 
 ## Description
-Simple exercice Angular2 permettant de se connecter à l'API de  https://www.themoviedb.org/ en récupérant des films, rechercher des films et voir la fiche d'un film.
+Simple exercice Angular2 permettant de se connecter à l'API de  https://www.themoviedb.org/ en récupérant des films, rechercher des films et voir la fiche d'un film. 
+
+## Démonstration 
+Une démo est mise en place sur mon serveur de test : https://www.dev.puji.fr/movie-finder  
 
 ## Development server
-Run `npm start` for a dev server. Navigate to `http://localhost:3000/`. The app will automatically reload if you change any of the source files.
+Lancer `npm start` pour démarrer le serveur de dev. Aller ensuite sur  `http://localhost:3000/`. L'application détectera automatiquement les changements de code source et se raffraichira.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Pour compiler l'application et la préparer pour une mise en ligne, lancer un terminal (ou console), aller dans le répertoire de base (ex : cd movie-finder) et lancer `ng build` pour compiler l'application. Le source compilé sera construit et disponible dans le répertoire  `dist/` directory. Utiliser `-prod` pour un environnement de production.
+
